@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura - Kiến tạo tương lai</title>
+  <title>Aura - Shaping the Future</title>
   <meta name="description"
-    content="Aura là giải pháp toàn diện giúp bạn tối ưu hóa quy trình làm việc và bứt phá doanh thu.">
+    content="Aura is a comprehensive solution that helps you optimize workflows and skyrocket your revenue.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +19,27 @@
     <div class="logo">Aura.</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#home">Trang chủ</a></li>
-        <li><a href="#features">Tính năng</a></li>
-        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="#home" data-i18n="nav-home">Home</a></li>
+        <li><a href="#features" data-i18n="nav-features">Features</a></li>
+        <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
       </ul>
     </nav>
-    <button class="btn-primary">Đăng ký ngay</button>
+    <div class="nav-actions">
+      <button id="lang-toggle" class="lang-btn">VI</button>
+      <button class="btn-primary" data-i18n="nav-signup">Sign up now</button>
+    </div>
   </header>
 
   <main>
     <section id="home" class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Đưa ý tưởng của bạn <br><span class="highlight">bay xa hơn</span>
+        <h1 class="hero-title" data-i18n="hero-title">Take your ideas <br><span class="highlight">further</span>
         </h1>
-        <p class="hero-subtitle">Giải pháp toàn diện giúp bạn tối ưu hóa quy trình làm việc và bứt
-          phá doanh thu với công nghệ tiên tiến nhất.</p>
+        <p class="hero-subtitle" data-i18n="hero-subtitle">A comprehensive solution to help you optimize workflows and skyrocket
+          revenue with cutting-edge technology.</p>
         <div class="cta-group">
-          <button class="btn-primary cta-btn">Khám phá ngay</button>
-          <button class="btn-secondary cta-btn">Tìm hiểu thêm</button>
+          <button class="btn-primary cta-btn" data-i18n="cta-explore">Explore now</button>
+          <button class="btn-secondary cta-btn" data-i18n="cta-learn">Learn more</button>
         </div>
       </div>
       <div class="hero-image">
@@ -47,29 +50,29 @@
     </section>
 
     <section id="features" class="features">
-      <h2 class="section-title">Tại sao chọn Aura?</h2>
+      <h2 class="section-title" data-i18n="section-title">Why choose Aura?</h2>
       <div class="feature-grid">
         <div class="feature-card">
           <div class="icon">🚀</div>
-          <h3>Tốc độ tối đa</h3>
-          <p>Hệ thống được tối ưu hóa để mang lại hiệu suất vượt trội cho dự án của bạn.</p>
+          <h3 data-i18n="feat1-title">Maximum speed</h3>
+          <p data-i18n="feat1-desc">Our system is optimized to deliver outstanding performance for your projects.</p>
         </div>
         <div class="feature-card">
           <div class="icon">🔒</div>
-          <h3>Bảo mật tuyệt đối</h3>
-          <p>Dữ liệu của bạn luôn được mã hóa và bảo vệ an toàn trên nền tảng của chúng tôi.</p>
+          <h3 data-i18n="feat2-title">Absolute security</h3>
+          <p data-i18n="feat2-desc">Your data is always encrypted and safely protected on our platform.</p>
         </div>
         <div class="feature-card">
           <div class="icon">✨</div>
-          <h3>Giao diện tinh tế</h3>
-          <p>Trải nghiệm người dùng tuyệt vời với thiết kế hiện đại, dễ dàng sử dụng.</p>
+          <h3 data-i18n="feat3-title">Refined interface</h3>
+          <p data-i18n="feat3-desc">A great user experience with a modern, easy-to-use design.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Aura. All rights reserved.</p>
+    <p data-i18n="footer-text">&copy; 2026 Aura. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
